@@ -1,3 +1,10 @@
+# Approve native build scripts.
+# pnpm 10 reads `onlyBuiltDependencies`; pnpm 11 reads `allowBuilds`.
+# Both are listed so the project works regardless of the pnpm major in use.
+onlyBuiltDependencies:
+  - esbuild
+  - protobufjs
+  - unrs-resolver
 allowBuilds:
   esbuild: true
   protobufjs: true
